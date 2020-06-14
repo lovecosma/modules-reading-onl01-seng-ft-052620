@@ -1,7 +1,9 @@
-describe 'MetaDancing' do 
+require_relative './fancy_dance.rb'
+
+describe 'MetaDancing' do
   let(:dummy_class) {Class.new {extend MetaDancing}}
 
-  it 'has a metadata method' do 
+  it 'has a metadata method' do
     expect(dummy_class.metadata).to eq("This class produces objects that love to dance.")
   end
 end
