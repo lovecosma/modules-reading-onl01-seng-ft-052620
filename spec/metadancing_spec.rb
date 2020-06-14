@@ -1,4 +1,4 @@
-require_relative './fancy_dance.rb'
+require_relative './lib/fancy_dance.rb'
 
 describe 'MetaDancing' do
   let(:dummy_class) {Class.new {extend MetaDancing}}
